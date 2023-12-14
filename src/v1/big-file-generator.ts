@@ -1,6 +1,6 @@
 import fs, { WriteStream } from "fs";
 
-const file: WriteStream = fs.createWriteStream("./big-file");
+const file: WriteStream = fs.createWriteStream("./big-file.txt");
 const ONE_MILLION: number = 1e6;
 
 for (let i = 0; i <= ONE_MILLION; i++) {

@@ -4,7 +4,7 @@ import fs from "fs";
 const server: Express = express();
 
 server.get("/file", (request: Request, response: Response, nextFunction: NextFunction) => {
-    fs.readFile("./big-file", (err, data: Buffer) => {
+    fs.readFile("./big-file.txt", (err, data: Buffer) => {
         if (err) {
             throw err;
         }

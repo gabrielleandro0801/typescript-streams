@@ -4,7 +4,7 @@ import fs, { ReadStream } from "fs";
 const server: Express = express();
 
 server.get("/file", (request: Request, response: Response, nextFunction: NextFunction) => {
-    const stream: ReadStream = fs.createReadStream("./big-file");
+    const stream: ReadStream = fs.createReadStream("./big-file.txt");
 
     stream.pipe(response);
     console.log("Chunk read");
