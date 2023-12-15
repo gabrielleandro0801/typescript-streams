@@ -5,9 +5,12 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "v1-file-writer": "ts-node-dev --respawn --transpile-only --ignore-watch node_modules --no-notify src/v1/big-file-generator.ts",
-    "v1-server-without-streams": "ts-node-dev --respawn --transpile-only --ignore-watch node_modules --no-notify src/v1/server-without-streams.ts",
-    "v1-server-with-streams": "ts-node-dev --respawn --transpile-only --ignore-watch node_modules --no-notify src/v1/server-with-streams.ts"
+    "v1-file-writer-with-streams": "ts-node-dev --respawn --transpile-only --ignore-watch node_modules --no-notify src/v1/file-generator-with-streams.ts",
+    "v1-file-writer-without-streams": "ts-node-dev --respawn --transpile-only --ignore-watch node_modules --no-notify src/v1/file-generator-without-streams.ts",
+    "v2-server-without-streams": "ts-node-dev --respawn --transpile-only --ignore-watch node_modules --no-notify src/v2/server-without-streams.ts",
+    "v2-server-with-streams": "ts-node-dev --respawn --transpile-only --ignore-watch node_modules --no-notify src/v2/server-with-streams.ts",
+    "v3-file-copier-with-streams": "ts-node-dev --respawn --transpile-only --ignore-watch node_modules --no-notify src/v3/file-copier-with-streams.ts",
+    "v3-file-copier-without-streams": "ts-node-dev --respawn --transpile-only --ignore-watch node_modules --no-notify src/v3/file-copier-without-streams.ts"
   },
   "repository": {
     "type": "git",
