@@ -2,7 +2,7 @@
 Repository with example of Streams in Typescript
 
 ## V1
-This example shows the difference between writing a file at once and by using Streams.
+This example shows the difference between writing a 1 million lines file at once and by using Streams.
 
 ### At once
 ![Image 1](https://github.com/gabrielleandro0801/typescript-streams/blob/master/images/v1/v1-file-generator-without-streams-1.png)
