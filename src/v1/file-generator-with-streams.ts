@@ -1,4 +1,8 @@
 import fs, { WriteStream } from "fs";
+import { calculateMemoryUsage, printMemoryUsed, retrieveMemory } from "../memory-functions";
+
+const initialMemory: number = retrieveMemory();
+console.time("Big File Generator with Streams");
 
 const file: WriteStream = fs.createWriteStream("./big-file.txt");
 const ONE_MILLION: number = 1e6;
@@ -8,4 +12,7 @@ for (let i = 0; i <= ONE_MILLION; i++) {
 }
 
 file.end();
-console.log("File created!");
+console.timeEnd("Big File Generator with Streams");
+
+const finalMemory: number = retrieveMemory();
+printMemoryUsed(calculateMemoryUsage(initialMemory, finalMemory));
