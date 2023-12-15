@@ -19,7 +19,7 @@ This example shows the difference between writing a 1 million lines file at once
 ![Image 3](https://github.com/gabrielleandro0801/typescript-streams/blob/master/images/v1/v1-file-generator-with-streams-3.png)
 
 ## V2
-@TODO
+This example shows the difference between returning a 1 million lines file at once and by using streams on a Web Server.
 
 ## V3
 This example shows the difference between copying a 1 million lines file at once and by using streams.
