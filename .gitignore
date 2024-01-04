@@ -7,3 +7,5 @@ coverage/
 dist/
 big-file.txt
 big-file-copied.txt
+big-file.csv
+big-file-copied.json

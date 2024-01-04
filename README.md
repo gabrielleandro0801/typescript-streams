@@ -37,3 +37,6 @@ This example shows the difference between copying a 1 million lines file at once
 ![Image 2](https://github.com/gabrielleandro0801/typescript-streams/blob/master/images/v3/v3-file-copier-with-streams-2.png)
 
 ![Image 3](https://github.com/gabrielleandro0801/typescript-streams/blob/master/images/v3/v3-file-copier-with-streams-3.png)
+
+## V4
+This example shows transformation of a 1 million lines CSV file into a JSON file.

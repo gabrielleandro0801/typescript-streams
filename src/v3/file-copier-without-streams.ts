@@ -1,4 +1,4 @@
-import fs from "fs";
+import fs from "node:fs";
 import { calculateMemoryUsage, printMemoryUsed, retrieveMemory } from "../memory-functions";
 
 const initialMemory: number = retrieveMemory();

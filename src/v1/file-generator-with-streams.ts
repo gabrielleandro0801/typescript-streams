@@ -1,4 +1,4 @@
-import fs, { WriteStream } from "fs";
+import fs, { WriteStream } from "node:fs";
 import { calculateMemoryUsage, printMemoryUsed, retrieveMemory } from "../memory-functions";
 
 const initialMemory: number = retrieveMemory();

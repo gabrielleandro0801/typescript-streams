@@ -1,5 +1,5 @@
 import express, { Express, NextFunction, Request, Response } from "express";
-import fs, { ReadStream } from "fs";
+import fs, { ReadStream } from "node:fs";
 
 const server: Express = express();
 
