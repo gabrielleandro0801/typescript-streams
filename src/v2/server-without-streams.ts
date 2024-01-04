@@ -1,5 +1,5 @@
 import express, { Express, NextFunction, Request, Response } from "express";
-import fs from "fs";
+import fs from "node:fs";
 
 const server: Express = express();
 
