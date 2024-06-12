@@ -4,15 +4,15 @@
   "description": "Repository with example of Streams in Typescript",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "v1-file-writer-with-streams": "ts-node-dev --respawn --transpile-only --ignore-watch node_modules --no-notify src/v1/file-generator-with-streams.ts",
-    "v1-file-writer-without-streams": "ts-node-dev --respawn --transpile-only --ignore-watch node_modules --no-notify src/v1/file-generator-without-streams.ts",
-    "v2-server-without-streams": "ts-node-dev --respawn --transpile-only --ignore-watch node_modules --no-notify src/v2/server-without-streams.ts",
-    "v2-server-with-streams": "ts-node-dev --respawn --transpile-only --ignore-watch node_modules --no-notify src/v2/server-with-streams.ts",
-    "v3-file-copier-with-streams": "ts-node-dev --respawn --transpile-only --ignore-watch node_modules --no-notify src/v3/file-copier-with-streams.ts",
-    "v3-file-copier-without-streams": "ts-node-dev --respawn --transpile-only --ignore-watch node_modules --no-notify src/v3/file-copier-without-streams.ts",
-    "v4-csv-generator-with-streams": "ts-node-dev --respawn --transpile-only --ignore-watch node_modules --no-notify src/v4/csv-generator-with-streams.ts",
-    "v4-csv-copier-into-json-with-streams": "ts-node-dev --respawn --transpile-only --ignore-watch node_modules --no-notify src/v4/csv-copier-into-json-with-streams.ts"
+    "execute": "ts-node-dev --respawn --transpile-only --ignore-watch node_modules --no-notify $1",
+    "v1-file-writer-with-streams": "npm run execute src/file-generator/file-generator-with-streams.ts",
+    "v1-file-writer-without-streams": "npm run execute src/file-generator/file-generator-without-streams.ts",
+    "v2-server-without-streams": "npm run execute src/server/server-without-streams.ts",
+    "v2-server-with-streams": "npm run execute src/server/server-with-streams.ts",
+    "v3-file-copier-with-streams": "npm run execute src/file-copier/file-copier-with-streams.ts",
+    "v3-file-copier-without-streams": "npm run execute src/file-copier/file-copier-without-streams.ts",
+    "v4-csv-generator-with-streams": "npm run execute src/csv-copier/csv-generator-with-streams.ts",
+    "v4-csv-copier-into-json-with-streams": "npm run execute src/csv-copier/csv-copier-into-json-with-streams.ts"
   },
   "repository": {
     "type": "git",
